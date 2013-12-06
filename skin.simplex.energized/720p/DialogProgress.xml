@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<window id="101">
+	<defaultcontrol>10</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>570</posx>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posy>452</posy>
+			<visible>Window.IsActive(0)</visible>
+			<control type="image">	
+				<width>140</width>
+				<height>134</height>
+				<texture>overlay.png</texture>
+			</control>
+			<control type="multiimage">
+				<width>140</width>
+				<height>134</height>
+				<imagepath>loading</imagepath>
+				<timeperimage>50</timeperimage>
+				<fadetime>1</fadetime>
+				<loop>yes</loop>
+			</control>
+		</control>
+		<control type="group">
+			<posy>293</posy>
+			<visible>!Window.IsActive(0)</visible>
+			<control type="image">	
+				<width>140</width>
+				<height>134</height>
+				<texture>overlay.png</texture>
+			</control>
+			<control type="multiimage">
+				<width>140</width>
+				<height>134</height>
+				<imagepath>loading</imagepath>
+				<timeperimage>50</timeperimage>
+				<fadetime>1</fadetime>
+				<loop>yes</loop>
+			</control>
+		</control>
+	</controls>	
+</window>
